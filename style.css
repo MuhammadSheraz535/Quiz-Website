@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@600&family=Josefin+Sans:wght@400;500&display=swap');
+
+*,
+*::before,
+*::after {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-weight: 300; */
+
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: rgba(17, 17, 17, 0.596);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.logo {
+    color: #ccc;
+    font-size: 4rem;
+    line-height: 1.6em;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    cursor: pointer;
+    color: #1E90FF;
+}
+
+.active {
+    background-color: #1E90FF;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav ul li a {
+    list-style: none;
+    text-decoration: none;
+    margin: 0 2rem;
+    padding: 1.2rem;
+    border-radius: 1.5rem;
+    border: 1px solid #ccc;
+    /* display: flex; */
+}
+
+nav ul li a:hover {
+    box-shadow: 0 0 2px 2px royalblue;
+    background-color: #1E90FF;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+
+.main_div {
+    background: url('./img1.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+ul li a {
+    color: #ccc;
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+.inner_div {
+    margin-top: 5rem;
+    width: 44vw;
+    background-color: #fff;
+    padding: 3rem 8rem;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 5px 3px rgba(54, 54, 93, 1);
+}
+
+
+
+.inner_div .question {
+    font-size: 2.2rem;
+    margin: 2rem;
+}
+
+.inner_div li {
+    list-style: none;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+input {
+    cursor: pointer;
+}
+
+.inner_div .btn {
+    display: block;
+    padding: 1.4rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 2rem;
+    border-radius: 0.6rem;
+    background-color: #1E90FF;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+
+
+}
+
+.inner_div .btn:hover {
+
+    transition: all 0.4s ease;
+    box-shadow: 0rem 0rem 0.2rem 2px skyblue;
+    font-size: 1.6rem;
+}
+
+#showScore {
+    background-color: #DCDCDC;
+    /* border: 2px solid rebeccapurple; */
+    margin-top: 2rem;
+    padding: 3rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 1rem 0.2rem rgba(0, 0, 0, 0.4);
+    position: relative;
+    
+}
+
+#showScore h3 {
+    position: absolute;
+    top:10px;left: 10px;
+    color: #000;
+    font-size: 2.5rem;
+    font-weight: 400;
+    
+    
+}
+
+.scoreArea {
+    display: none;
+}
+
+#showScore .btn {
+    background-color: #2F4F4F;
+}
+
+
+/* Contact us */
+
+h1 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 800;  
+   position: absolute;
+   top: 10px;left: 40%;
+   line-height: 2rem;
+
+  
+ 
+
+}
+
+
+form {
+    
+    background: url('./img1.jpg') center no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    
+    
+    
+}
+.wrapper{
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 60vw;    
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+    position: relative;
+ 
+    
+}
+
+
+.btn {
+   
+    border: none;
+    outline: none;
+    letter-spacing: 2px;
+    color: #000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    line-height: 2rem;
+    font-size: 2rem;
+    border-radius: 2rem;
+    margin: auto;
+    padding: 9px;
+    /* margin-top: 8rem; */
+  
+
+
+}
+
+input {
+    color: #000;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 2rem;
+    line-height: 1rem;
+    letter-spacing: 2px;
+
+}
+
+.txtarea {
+    color: #111;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+  
+}
+
+.submit {
+    background-color: rgba(0, 0, 255, 0.64);
+    color: #fff;
+    padding: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    text-transform: uppercase;
+}
+
+.submit:hover {
+    box-shadow: 0 0 2px 2px rgba(0, 0, 255, 0.64);
+    transition: all 0.2s ease;
+}
+
+
+
+/* MEDIA QUERY */
+@media screen and (max-width:1240px) {
+    html{
+        font-size: 55%;
+        scroll-behavior: smooth;
+    }
+    .logo{
+        font-size: 3rem;
+    }
+    nav ul li a{
+        font-size: 1.5rem;
+    }
+
+    
+}
+@media screen and (max-width:800px) {
+    html{
+        font-size: 45%;
+        scroll-behavior: smooth;
+    }
+    .logo{
+        font-size: 3rem;
+    }
+    nav ul li a{
+        font-size: 1.5rem;
+    }
+    .inner_div{
+        width: 60vw;
+    }
+
+    
+}
+@media screen and (max-width:633px) {
+    html{
+        font-size: 40%;
+        scroll-behavior: smooth;
+    }
+    .logo{
+        font-size: 4rem;
+    }
+    nav ul li a{
+        font-size: 1.2rem;
+    }
+    .inner_div{
+        width: 70vw;
+    }
+
+    
+}
+@media screen and (max-width:533px) {
+    html{
+        font-size: 30%;
+        scroll-behavior: smooth;
+    }
+    .logo{
+        font-size: 4rem;
+    }
+    nav ul li a{
+        font-size: 1.2rem;
+    }
+    .inner_div{
+        width: 70vw;
+    }
+.submit{
+    font-size: 3rem;
+    padding: 2rem;
+}
+    
+}
+@media screen and (max-width:450px) {
+    html{
+        font-size: 30%;
+        scroll-behavior: smooth;
+    }
+    .logo{
+        font-size: 4rem;
+    }
+    nav ul li a{
+        font-size: 1.2rem;
+    }
+    .inner_div{
+        width: 70vw;
+    }
+.wrapper{
+    /* gap: 1rem; */
+    grid-template-columns: 1fr;
+}
+.btn{
+    margin: 0;display: grid;gap: 0.3rem;
+}
+   
+.wrapper h1{
+    font-size:3rem;
+    font-weight: 700;
+    line-height: 1rem;
+    top: 10px;
+    left: 30%;
+    padding-bottom:5rem ;
+   
+}
+
+  .txtarea{
+    margin-top: 5rem;
+  }
+  .btn{
+    margin-top: 6rem;
+  }
+}
+
