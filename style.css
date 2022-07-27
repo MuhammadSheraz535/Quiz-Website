@@ -7,6 +7,7 @@
     font-family: 'Josefin Sans', sans-serif;
     margin: 0;
     padding: 0;
+    border: none;
     box-sizing: border-box;
     /* font-weight: 300; */
 
@@ -159,103 +160,13 @@ input {
 }
 
 
-/* Contact us */
-
-h1 {
-    color: #fff;
-    font-size: 3rem;
-    font-weight: 800;  
-   position: absolute;
-   top: 10px;left: 40%;
-   line-height: 2rem;
-
-  
- 
-
-}
-
-
-form {
-    
-    background: url('./img1.jpg') center no-repeat;
-    background-size: cover;
-    width: 100%;
-    min-height: 100vh;
-    display: grid;
-    place-items: center;
-    
-    
-    
-}
-.wrapper{
-    background-color: rgba(0, 0, 0, 0.2);
-    width: 60vw;    
-    min-height: 100%;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    place-items: center;
-    position: relative;
- 
-    
-}
-
-
-.btn {
-   
-    border: none;
-    outline: none;
-    letter-spacing: 2px;
-    color: #000;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 500;
-    line-height: 2rem;
-    font-size: 2rem;
-    border-radius: 2rem;
-    margin: auto;
-    padding: 9px;
-    /* margin-top: 8rem; */
-  
-
-
-}
-
-input {
-    color: #000;
-    font-family:'Courier New', Courier, monospace;
-    font-size: 2rem;
-    line-height: 1rem;
-    letter-spacing: 2px;
-
-}
-
-.txtarea {
-    color: #111;
-    font-size: 1.5rem;
-    border: none;
-    outline: none;
-  
-}
-
-.submit {
-    background-color: rgba(0, 0, 255, 0.64);
-    color: #fff;
-    padding: 1.2rem;
-    border-radius: 10px;
-    border: none;
-    text-transform: uppercase;
-}
-
-.submit:hover {
-    box-shadow: 0 0 2px 2px rgba(0, 0, 255, 0.64);
-    transition: all 0.2s ease;
-}
 
 
 
 /* MEDIA QUERY */
-@media screen and (max-width:1240px) {
+@media screen and (max-width:950px) {
     html{
-        font-size: 55%;
+        font-size: 60%;
         scroll-behavior: smooth;
     }
     .logo{
@@ -335,23 +246,12 @@ input {
     .inner_div{
         width: 70vw;
     }
-.wrapper{
-    /* gap: 1rem; */
-    grid-template-columns: 1fr;
-}
+
 .btn{
     margin: 0;display: grid;gap: 0.3rem;
 }
    
-.wrapper h1{
-    font-size:3rem;
-    font-weight: 700;
-    line-height: 1rem;
-    top: 10px;
-    left: 30%;
-    padding-bottom:5rem ;
-   
-}
+
 
   .txtarea{
     margin-top: 5rem;
