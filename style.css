@@ -178,6 +178,11 @@ input {
 
     
 }
+
+.btn{
+    display: block;
+    margin: auto;
+}
 @media screen and (max-width:800px) {
     html{
         font-size: 45%;
